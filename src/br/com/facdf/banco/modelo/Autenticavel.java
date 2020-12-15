@@ -5,4 +5,5 @@ public interface Autenticavel {
      boolean autentica(String senha);
 
      void trocarSenha(String senha);
+     
 }

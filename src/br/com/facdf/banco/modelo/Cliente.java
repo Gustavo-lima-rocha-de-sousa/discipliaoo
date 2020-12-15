@@ -20,5 +20,7 @@ public class Cliente extends Pessoa {
     }
 
     public void realizarCadastro(int msg) {
+    
     }
+    
 }

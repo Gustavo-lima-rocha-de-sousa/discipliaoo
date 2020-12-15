@@ -27,11 +27,11 @@ public abstract class Funcionario extends Pessoa {
         this.codigoFuncionario = codigoFuncionario;
     }
 
-    @Override
     public String toString() {
         return " Funcionario " + this.getNome();
 
     }
 
     public abstract void entregarDocumentos();
+    
 }

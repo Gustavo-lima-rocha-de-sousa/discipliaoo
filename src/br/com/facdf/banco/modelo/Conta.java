@@ -62,22 +62,9 @@ public class Conta  {
 
     }
 
-    @Override
     public String toString() {
         return " Conta " + this.codigoConta;
 
     }
-
-
-    /* kennedy 1 ponto
-     *
-     * Classe endereço com 3 atributos
-     *
-     * cep String
-     * logradouro String
-     * numero long
-     *
-     *
-     * */
 
 }

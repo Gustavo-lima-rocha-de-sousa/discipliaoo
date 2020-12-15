@@ -38,6 +38,9 @@ public class Endereco {
     public void setNumero(long numero) {
         if (numero > 0) {
             this.numero = numero;
+        
         }
+    
     }
+
 }

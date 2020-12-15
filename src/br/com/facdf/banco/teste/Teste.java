@@ -11,10 +11,6 @@ public class Teste {
 
     public static void main (String args []) {
 
-//        git branch nomeDeVoces
-//        git checkout nomeDeVoces
-//        git push origin nomeDeVoces
-
         Gerente gerente = new Gerente();
         gerente.pagarSalario(6000d);
         System.out.println(gerente.getSalario());
@@ -34,26 +30,26 @@ public class Teste {
         List<Pessoa> listaPessoas = new ArrayList<>();
 
         Endereco endereco = new Endereco();
-        endereco.setLogradouro("rua 45");
+        endereco.setLogradouro("rua 50");
 
         Pessoa cliente = new Cliente();
-        cliente.setNome("Jose");
+        cliente.setNome("ruan");
         listaPessoas.add(cliente);
         cliente.setEndereco(endereco);
 
         Pessoa cliente2 = new Cliente();
-        cliente.setNome("Jose");
+        cliente.setNome("milton");
         cliente.setEndereco(endereco);
 
         Dependente dependente = new Dependente();
-        dependente.setNome("joao");
+        dependente.setNome("marcos");
         dependente.setCodigoDependente(15464);
         dependente.setCliente((Cliente)cliente);
 
         Date date = new Date();
         Dependente dependente2 = new Dependente();
         dependente.setDataNascimento(date);
-        dependente2.setNome("Maria");
+        dependente2.setNome("julia");
         dependente2.setCodigoDependente(15464);
         dependente2.setCliente((Cliente)cliente);
 
@@ -61,23 +57,13 @@ public class Teste {
 
         imprimirInformacoesDependente(dependente2);
 
-
-
-
-
-
-
-
     }
 
     private static void imprimirInformacoesDependente(Dependente qualquerDependente) {
         System.out.println(qualquerDependente.getNome());
         System.out.println(qualquerDependente.getCliente().getNome());
         System.out.println(qualquerDependente.getCliente().getEndereco().getLogradouro());
+    
     }
+
 }
-
-
-
-
-

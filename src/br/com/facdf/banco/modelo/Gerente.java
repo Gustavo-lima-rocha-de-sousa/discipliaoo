@@ -14,7 +14,6 @@ public class Gerente extends Funcionario implements Autenticavel, RecebeBenefici
         }
     }
 
-    @Override
     public double getBonificacao() {
 
         return super.salario += super.salario * 0.2;
@@ -28,7 +27,6 @@ public class Gerente extends Funcionario implements Autenticavel, RecebeBenefici
         }
     }
 
-    @Override
     public boolean autentica(String senha) {
         if (this.senha.equalsIgnoreCase(senha)) {
             System.out.println("atenticado!!");
@@ -39,18 +37,16 @@ public class Gerente extends Funcionario implements Autenticavel, RecebeBenefici
         }
     }
 
-
-    @Override
+    
     public String toString() {
         return " Gerente " + this.getSenha();
     }
 
-    @Override
+   
     public void entregarDocumentos() {
 
     }
 
-    @Override
     public void trocarSenha(String senha) {
        this.senha = senha;
     }

@@ -6,5 +6,7 @@ public class ContaPessoaFisica extends Conta {
 
     public ContaPessoaFisica(String codigoSeguranca) {
         super(codigoSeguranca);
+    
     }
+    
 }
